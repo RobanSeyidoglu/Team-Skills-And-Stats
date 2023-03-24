@@ -45,9 +45,18 @@ header {
 .right-header a:hover {
   color: var(--text-color-hover);
 }
+h1 {
+  color: black;
+  transition: 400ms;
+}
 h1:hover {
   color: var(--text-color-hover);
   cursor: pointer;
+  transition: 400ms;
+  -webkit-transition: 400ms;
+  -moz-transition: 400ms;
+  -ms-transition: 400ms;
+  -o-transition: 400ms;
 }
 /* Article styles */
 .Roban-services {
@@ -231,7 +240,7 @@ section {
 .ten:hover .number,
 .twenty:hover .number,
 .seventy:hover .number {
-  color:black;
+  color: black;
   text-shadow: 2px 2px 10px yellow;
   transition: 0.75s;
 }
@@ -253,4 +262,73 @@ section {
   -moz-border-radius: 50px;
   -ms-border-radius: 50px;
   -o-border-radius: 50px;
+}
+.our-skills-container {
+  max-width: 110rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background-color: var(--sections-background-color);
+  padding: 3rem;
+  text-align: center;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  gap: 20px;
+}
+.our-skills-container h3 {
+  align-self: center;
+  font-size: 1.5rem;
+}
+.html-div {
+  width: 110rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.html-div p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  width: 80px;
+  text-align: right;
+}
+.html-line {
+  text-align: center;
+  position: relative;
+  width: 80rem;
+  height: 2.5rem;
+  background-image: linear-gradient(
+    to right,
+    #03a9f4 0%,
+    #03a9f4 60%,
+    white 60%,
+    white 100%
+  );
+}
+.html-line span {
+  top: 3px;
+  position: absolute;
+  right: 41%;
+  color: white;
+}
+footer {
+  max-width: 110rem;
+  height: 3rem;
+  margin: 0 auto;
+  background-color: #333333;
+  color: var(--main-background-color);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+footer p span {
+  color: var(--text-color-hover);
 }
