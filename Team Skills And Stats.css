@@ -12,6 +12,9 @@
   --font-secondary: "Open Sans", sans-serif;
   --font-tertiary: "Rubik", sans-serif;
 }
+html{
+  scroll-behavior: smooth;
+}
 body {
   font-family: var(--font-primary);
   text-transform: capitalize;
